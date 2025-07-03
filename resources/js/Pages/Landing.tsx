@@ -168,7 +168,7 @@ const landing:React.FC =  ({}: Props) => {
       </section>
 
       <section className=''>
-                <GalleryCarousel></GalleryCarousel>
+                {/* <GalleryCarousel></GalleryCarousel> */}
       </section>
 
     </LandingLayout>

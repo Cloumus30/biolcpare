@@ -4,6 +4,7 @@ import { createInertiaApp } from '@inertiajs/react'
 import { createRoot } from 'react-dom/client'
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
+import ReactGA from 'react-ga4';
 
 createInertiaApp({
   resolve: name => {
@@ -11,6 +12,7 @@ createInertiaApp({
     return pages[`./Pages/${name}.tsx`]
   },
   setup({ el, App, props }) {
+     ReactGA.initialize('G-HNETTFG64F');
      
     createRoot(el).render(<PrimeReactProvider><App {...props} /></PrimeReactProvider> )
   },

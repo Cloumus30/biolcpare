@@ -8,17 +8,17 @@
     "src": "node_modules/primereact/resources/themes/lara-light-cyan/fonts/InterVariable.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-CSesDk0Z.css",
+    "file": "assets/app-C01mtrMe.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.tsx": {
-    "file": "assets/app-4zx0OMET.js",
+    "file": "assets/app-BGpkxKJr.js",
     "name": "app",
     "src": "resources/js/app.tsx",
     "isEntry": true,
     "css": [
-      "assets/app-BGJQwNaR.css"
+      "assets/app-Bq7JaFkM.css"
     ],
     "assets": [
       "assets/InterVariable-CWi-zmRD.woff2",
