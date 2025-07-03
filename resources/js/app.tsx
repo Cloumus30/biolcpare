@@ -2,6 +2,8 @@ import '../css/app.css';
 
 import { createInertiaApp } from '@inertiajs/react'
 import { createRoot } from 'react-dom/client'
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 createInertiaApp({
   resolve: name => {
@@ -9,6 +11,7 @@ createInertiaApp({
     return pages[`./Pages/${name}.tsx`]
   },
   setup({ el, App, props }) {
-    createRoot(el).render(<App {...props} />)
+     
+    createRoot(el).render(<PrimeReactProvider><App {...props} /></PrimeReactProvider> )
   },
 })

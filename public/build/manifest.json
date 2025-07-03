@@ -1,16 +1,28 @@
 {
+  "node_modules/primereact/resources/themes/lara-light-cyan/fonts/InterVariable-Italic.woff2": {
+    "file": "assets/InterVariable-Italic-d6KXgdvN.woff2",
+    "src": "node_modules/primereact/resources/themes/lara-light-cyan/fonts/InterVariable-Italic.woff2"
+  },
+  "node_modules/primereact/resources/themes/lara-light-cyan/fonts/InterVariable.woff2": {
+    "file": "assets/InterVariable-CWi-zmRD.woff2",
+    "src": "node_modules/primereact/resources/themes/lara-light-cyan/fonts/InterVariable.woff2"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-CLHtNpkh.css",
+    "file": "assets/app-CSesDk0Z.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.tsx": {
-    "file": "assets/app-meRok7sW.js",
+    "file": "assets/app-4zx0OMET.js",
     "name": "app",
     "src": "resources/js/app.tsx",
     "isEntry": true,
     "css": [
-      "assets/app-CLHtNpkh.css"
+      "assets/app-BGJQwNaR.css"
+    ],
+    "assets": [
+      "assets/InterVariable-CWi-zmRD.woff2",
+      "assets/InterVariable-Italic-d6KXgdvN.woff2"
     ]
   }
 }
