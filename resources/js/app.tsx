@@ -5,6 +5,8 @@ import { createRoot } from 'react-dom/client'
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import ReactGA from 'react-ga4';
+import { createContext, useState } from 'react';
+import { GlobalProvider } from './Providers/GlobalContext';
 
 createInertiaApp({
   resolve: name => {
@@ -14,6 +16,12 @@ createInertiaApp({
   setup({ el, App, props }) {
      ReactGA.initialize('G-HNETTFG64F');
      
-    createRoot(el).render(<PrimeReactProvider><App {...props} /></PrimeReactProvider> )
+    createRoot(el).render(
+    <GlobalProvider>
+      <PrimeReactProvider>
+        <App {...props} />
+      </PrimeReactProvider> 
+    </GlobalProvider>
+  )
   },
 })
